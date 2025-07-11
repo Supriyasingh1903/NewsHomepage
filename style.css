@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins ', sans-serif;
+}
+
+body {
+    background-color: #fffaf5;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #000;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5d5d5d;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f15d51;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    background-image: url('https://vegavid.com/blog/wp-content/uploads/2024/03/Web-3.0.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+    transition: transform 0.3s ease;
+}
+
+
+.hero-image:hover {
+    transform: scale(1.01);
+}
+
+.hero-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #000;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-description p {
+    color: #5d5d5d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    background: #f15d51;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background: #000;
+    transform: translateY(-2px);
+}
+
+/* Sidebar */
+.sidebar {
+    background: #000;
+    color: white;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar:hover {
+    transform: translateY(-5px);
+}
+
+.new-badge {
+    color: #e9aa52;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sidebar-article {
+    padding: 20px 0;
+    border-bottom: 1px solid #5d5d5d;
+    transition: all 0.3s ease;
+}
+
+.sidebar-article:hover {
+    transform: translateX(5px);
+}
+
+.sidebar-article:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.sidebar-article h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sidebar-article h3:hover {
+    color: #e9aa52;
+}
+
+.sidebar-article p {
+    color: #c5c6ce;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Bottom Articles */
+.bottom-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.article-item {
+    display: flex;
+    gap: 15px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.article-item:hover {
+    transform: translateY(-5px);
+}
+
+.article-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #c5c6ce;
+}
+
+.article-content h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.article-content h3:hover {
+    color: #f15d51;
+}
+
+.article-content p {
+    color: #5d5d5d;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Article Images */
+.article-image {
+    width: 80px;
+    height: 100px;
+    background-color: #f0f0f0;
+    margin-right: 15px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.article-item:hover .article-image {
+    transform: scale(1.05);
+}
+
+.article-1 .article-image {
+    background-image: url('https://as1.ftcdn.net/v2/jpg/04/10/14/32/1000_F_410143295_PTjrMHejjSQecNYO1BBC1bgFpqpxRY1h.jpg');
+}
+
+.article-2 .article-image {
+    background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80');
+}
+
+.article-3 .article-image {
+    background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Man-holding-controller-in-front-of-PC-gaming-set1?scl=1&fmt=png-alpha');
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-articles {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}
